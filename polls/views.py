@@ -1,4 +1,5 @@
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
+from .forms import RegisterForm
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from django.views import generic
@@ -39,3 +40,14 @@ def vote(request, question_id):
         selected_choice.save()
 
         return HttpResponseRedirect(reversed('polls:results', args=(question.id,)))
+
+
+def register(request):
+    if request.method == "POST":
+        response = HttpResponse()
+        response.write("<h1>Thanks for registering</h1></br>")
+        response.write("Your username: " + request.POST['username'] + "</br>")
+        response.write("Your email: " + request.POST['email'] + "</br>")
+        return response
+    registerForm = RegisterForm()
+    return render(request, 'polls/register.html', {'form': registerForm})
