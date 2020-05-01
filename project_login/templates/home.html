@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='vi'>
+<head>
+    <meta charset="UTF-8">
+    <title>PVD Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">PVDoanh</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">Technical</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+        </li>
+
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Nhập từ khoá" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+        </form>
+    </div>
+</nav>
+
+<div class="container Learn list">
+    <h1 class='mb-4'>Danh sách skill đã học</h1>
+    {% for x in 'dsfdg'%}
+        <div class="media m-3">
+            
+        <a href=""><img src="https://placeimg.com/640/480/any" class="mr-3" alt="" width='120'></a>
+            <div class="media-body">
+                <h5 class="mt-0"><a href="">Skill 1</a></h5>
+                <ul>
+                    <li> Chủ đề: <a href=""> Coding</a></li>
+                    <li> Ngôn ngữ: English</li>
+                </ul>
+                {% lorem 1 p random%}
+            </div>
+        </div>
+    {% endfor%}
+</div>
+
+</body>
+</html> 
