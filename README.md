@@ -1,4 +1,4 @@
-### Install POSTGRESQL
+### **Install POSTGRESQL**
 ```sh
 #HOW TO INSTALL POSTGRESQL
 brew update
@@ -26,3 +26,14 @@ DROP DATABASE mydatabasename;
 - \c mydatabasename - Connect to another database.
 - \d - List the relations of your currently connected database.
 - \d mytablename - Shows information for a specific table.
+
+### **requirements.txt**
+- Generate `requirements.txt`
+    ```
+    pip freeze > requirements.txt
+    ```
+
+- Install `requirement.txt`
+    ```
+    pip install -r requirements.txt
+    ```

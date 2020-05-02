@@ -8,3 +8,6 @@ class Blog(models.Model):
     viewer = models.PositiveIntegerField(default=0)
     picture = models.ImageField(upload_to='Blog_picture')
 
+    def __str__(self):
+        return self.name
+
