@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'Blog.apps.BlogConfig'
+    'profiles.app.ProfilesConfig'
 ]
 
 MIDDLEWARE = [
@@ -128,3 +129,8 @@ STATICFILES_DIRS = (
 )
 MEDIA_URL = '/Blog_picture/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'Blog_picture')
+
+try:
+    from project_login.local_setting import *
+except ImportError:
+    pass
