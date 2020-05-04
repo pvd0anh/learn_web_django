@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'Blog.apps.BlogConfig'
-    'profiles.app.ProfilesConfig'
+    'Blog.apps.BlogConfig',
+    'profiles.apps.ProfilesConfig'
 ]
 
 MIDDLEWARE = [
@@ -80,6 +80,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'logindb',
+        'PASSWORD': 'teamarrow',
         # 'HOST': '127.0.0.1',
         # 'PORT': '5432'
 
