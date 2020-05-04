@@ -27,6 +27,7 @@ DROP DATABASE mydatabasename;
 - \d - List the relations of your currently connected database.
 - \d mytablename - Shows information for a specific table.
 
+Note: pass on windows device: sdt-Doanh 
 ### **requirements.txt**
 - Generate `requirements.txt`
     ```
